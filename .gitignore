@@ -1,9 +1,9 @@
 ### IntelliJ IDEA ###
 out/
-/.idea
+!**/.idea
 !**/src/main/**/out/
 !**/src/test/**/out/
-Project1CinemaRoomManager.iml
+!Project1CinemaRoomManager.iml
 
 ### Eclipse ###
 .apt_generated
