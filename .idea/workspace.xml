@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670597182960</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="4th commit. Excluded /.idea folder and Project1CinemaRoomManager.iml file">
+      <created>1670597622966</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670597622966</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
