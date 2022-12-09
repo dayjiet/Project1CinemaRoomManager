@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * The method creates a menu of the application
+     */
     public static void menu(String[][] hall, int rows, int seats, int ticketsCounter, int incomeCounter, int totalIncome) {
         Scanner menuScanner = new Scanner(System.in);
 
@@ -28,6 +31,9 @@ public class Main {
         }
     }
 
+    /**
+     * The method displays you the current state of the seating arrangement in the Cinema Room
+     */
     public static void show(String[][] hall, int rows, int seats, int ticketsCounter, int incomeCounter, int totalIncome) {
         System.out.println();
         System.out.println("Cinema:");
@@ -42,6 +48,9 @@ public class Main {
         menu(hall, rows, seats, ticketsCounter, incomeCounter, totalIncome);
     }
 
+    /**
+     * The method allows you to buy tickets and displays the cost of a certain seat in the Cinema Room
+     */
     public static void buy(String[][] hall, int rows, int seats, int ticketsCounter, int incomeCounter, int totalIncome) {
         Scanner buyScanner = new Scanner(System.in);
 
@@ -92,6 +101,10 @@ public class Main {
         }
     }
 
+    /**
+     * The method allows you to show statistics of the application: the current income, total income,
+     * the number of available seats, and the percentage of occupancy
+     */
     public static void stat(String[][] hall, int rows, int seats, int ticketsCounter, int incomeCounter, int totalIncome) {
 
         int seatCount = 60;
@@ -119,6 +132,9 @@ public class Main {
         menu(hall, rows, seats, ticketsCounter, incomeCounter, totalIncome);
     }
 
+    /**
+     * The method creates a Cinema Room with a certain number of rows and seats in each row
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
