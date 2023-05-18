@@ -1,3 +1,5 @@
+package managing;
+
 import java.util.Scanner;
 
 public class CinemaRoomManager {
