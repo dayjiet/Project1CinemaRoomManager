@@ -2,6 +2,10 @@ package managing;
 
 import java.util.Scanner;
 
+/**
+ * The CinemaRoomManager class manages the seating arrangement and ticket sales in a cinema room.
+ * It provides methods for displaying the menu, showing the seats, purchasing tickets, and displaying statistics.
+ */
 public class CinemaRoomManager {
     private static final int TOTAL_SEATS = 60;
     private static final int HIGH_PRICE_TICKET_COST = 10;
@@ -9,9 +13,13 @@ public class CinemaRoomManager {
     private static final int HALF_HALL = 2;
 
     /**
-     * 1. The displayMenu() method creates a menu of the application and takes as input a 2D array representing
-     * the seating arrangement, integers for the number of rows, seats, tickets purchased, and the income
-     * and total income of the application
+     * Displays the menu of the application and handles user input to perform the selected action.
+     * @param seatingGrid the 2D array representing the seating arrangement
+     * @param rows the number of rows in the cinema room
+     * @param seats the number of seats in each row of the cinema room
+     * @param ticketCount the number of tickets purchased
+     * @param currentIncome the current income of the application
+     * @param totalIncome the total income of the application
      */
     public static void displayMenu(String[][] seatingGrid, int rows, int seats, int ticketCount,
                                    int currentIncome, int totalIncome) {
@@ -42,8 +50,13 @@ public class CinemaRoomManager {
     }
 
     /**
-     * 2. The displaySeats() method displays the current state of the seating arrangement in the Cinema Room
-     * by iterating through the 2D array of seatingArrangement and printing each row
+     * Displays the current state of the seating arrangement in the cinema room.
+     * @param seatingGrid the 2D array representing the seating arrangement
+     * @param rows the number of rows in the cinema room
+     * @param seats the number of seats in each row of the cinema room
+     * @param ticketCount the number of tickets purchased
+     * @param currentIncome the current income of the application
+     * @param totalIncome the total income of the application
      */
     public static void displaySeats(String[][] seatingGrid, int rows, int seats, int ticketCount, int currentIncome, int totalIncome) {
         System.out.println();
@@ -60,8 +73,13 @@ public class CinemaRoomManager {
     }
 
     /**
-     * 3. The purchaseTicket() method allows the user to buy a ticket for a seat in the Cinema Room
-     * and displays the cost of the seat
+     * Allows the user to buy a ticket for a seat in the cinema room and updates the seating arrangement accordingly.
+     * @param seatingGrid the 2D array representing the seating arrangement
+     * @param rows the number of rows in the cinema room
+     * @param seats the number of seats in each row of the cinema room
+     * @param ticketCount the number of tickets purchased
+     * @param currentIncome the current income of the application
+     * @param totalIncome the total income of the application
      */
     public static void buyTicket(String[][] seatingGrid
             , int rows, int seats, int ticketCount, int currentIncome, int totalIncome) {
@@ -111,8 +129,13 @@ public class CinemaRoomManager {
     }
 
     /**
-     * 4. The method allows you to show statistics of the application: the current income, total income,
-     * the number of available seats, and the percentage of occupancy
+     * Displays statistics of the application, including the current income, total income,
+     * the number of purchased tickets, and the percentage of occupancy.
+     * @param seatingGrid the 2D array representing the seating arrangement
+     * @param rows the number of rows in the cinema room
+     * @param seats the number of seats in each row of the cinema room
+     * @param ticketCount the number of tickets purchased
+     * @param currentIncome the current income of the application
      */
     public static void displayStatistics(String[][] seatingGrid
             , int rows, int seats, int ticketCount, int currentIncome) {
@@ -138,9 +161,8 @@ public class CinemaRoomManager {
     }
 
     /**
-     * The Main class defines the displayMenu(), displaySeats(), purchaseTicket() and displayStatistics() methods
-     * which display a menu, the seating arrangement, allows purchasing of tickets, and display the statistics
-     * of the application respectively
+     * The main method initializes the cinema room, processes user input, and starts the application.
+     * @param args command-line arguments (not used)
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
