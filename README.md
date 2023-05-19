@@ -37,6 +37,16 @@ To use the Cinema Room Manager application, follow these steps:
 
 The application will continue to display the menu after each action until the user chooses to exit.
 
+To run the Project1CinemaRoomManager-1.0-SNAPSHOT.jar file, perform the following steps:
+
+1. Download the JAR file.
+2. Open a terminal or command prompt: Navigate to the directory where the JAR file is located.
+3. Run the JAR file: Enter the following command to execute the JAR file:
+```shell
+java -jar Project1CinemaRoomManager-1.0-SNAPSHOT.jar
+```
+4. Follow the on-screen instructions: The program will display a menu with different options. Enter the corresponding number to perform the desired action.
+
 ## Feedback
 During the Cinema Room Manager project, I gained valuable insights into working with input and output in Java. This project provided me with an opportunity to utilize arrays, functions, loops, and conditional statements effectively.
 
