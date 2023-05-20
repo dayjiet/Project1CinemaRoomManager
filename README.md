@@ -1,7 +1,4 @@
-# Cinema Room Manager
-```html
-https://hyperskill.org/projects/133
-```
+# [Cinema Room Manager](https://hyperskill.org/projects/133)
 
 ## Table of Contents
 - [Description](#description)
